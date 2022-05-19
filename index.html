@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Insight</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid d-flex justify-content-between align-items-center mt-4">
+      
+      <i class="fa-solid fa-bars toggle-icon-custom d-md-none" id="toggle-icon-custom" onclick="openNav()"></i>
+      <!-- <img class=" toggle-icon-custom d-none" src="./images/toggleButton.png" alt=""> -->
+      
+      <div class="logo ">
+        <img class="d-none d-sm-none d-md-inline d-lg-inline" src="./images/logo.png" alt="">
+      </div>
+
+      <nav class="d-md-flex navbar d-none d-sm-none">
+        <ul class="d-flex nav-item-list ">
+          <li class="">
+						<a class="scroll-link" href="#section-6">HOME</a>
+					</li>
+					<li class="mx-4">
+						<div class="dropdown">
+              <a href="#" class=" dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Industries
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div>
+
+					</li>
+          <li class="">
+						<a class="scroll-link" href="#section-6">Contact us</a>
+					</li>
+        </ul>
+      </nav>
+
+      <aside class="sidebar text-dark position-absolute " id="sidebar">
+        <div class="d-flex justify-content-between p-5">
+          <span class="menu-tag">MENU</span>
+          <img src="./images/clsBtn.png" id="closeButton" class="closeButton" onclick="closeNav()" alt="">
+        </div>
+        <hr>
+        <ul class="text-dark p-5 sidebar-list nav-item-list">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li class="my-4">
+            <div class="dropdown">
+              <a href="#" class=" dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Industries
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">Action</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+      </aside>
+
+      
+
+
+    </header>
+    <main>
+
+      <section class="banner container-fluid my-5 position-relative">
+        <div class="row justify-content-between align-items-center custom-two-part flex-column-reverse flex-sm-column-reverse flex-lg-row flex-md-row position-relative">
+          <div class="banner-text col">
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex flex-column d-sm-flex d-lg-block d-md-block align-items-sm-center align-items-center">
+                <h1 class="banner-heading">
+                  Helping you <span class="colored-banner-heading">scale</span> with<span class="colored-banner-heading"> data</span>
+                </h1>
+                <p class="banner-para my-lg-3 my-md-3">
+                  We bring your ideas and data to life with data science, machine learning, and artificial intelligence. We help top companies build and deploy custom analytics solutions.
+                </p>
+                <button class="banner-btn">Contact Us</button>
+              </div>
+    
+              </div>
+            </div>
+          
+          <div class="col banner-img-main">
+              <div class="d-flex flex-column align-items-center">
+                <img class="banner-img" src="./images/circles.png" alt="">
+              </div>
+          </div>
+          <img class="curvy-bg position-absolute" src="./images/curvybg.png" alt="">
+          <img class="half-circle position-absolute" src="./images/halfCircle.png" alt="">
+        </div>
+      </section>
+
+      <section class="awards d-flex flex-column justify-content-around align-items-center pt-5">
+        <h1>Apple Insight Named in 2020 Clutch Leaders MatriX for Data Analytics </h3>
+        <h2>Top 3 Big Data Companies 
+          in Canada</h4>
+        <div>
+          <img class="mx-4 clutch-award" src="./images/awards.png" alt="">
+          <img class="mx-4 clutch-award" src="./images/awards2.png" alt="">
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="d-flex flex-column align-items-center">
+          <h1 class="world-services">World-Class Services</h1>
+        <p class="world-services-description mb-0">We are a team of world-class data scientists and engineers who have helped top companies like <span class="world-services-description-company">
+          Facebook, Google, Uber, Amazon, Microsoft
+        </span> and others solve some of their hardest problems.</p>
+        <small class="learn-more">Learn More <span class="learn-more-about">About Our Services</span></small>
+        </div>
+      </section>
+
+      <section class="pb-5 container">
+        <div class="row ">
+          
+            <div class="col order-2 order-sm-2 order-md-1 order-lg-1 d-flex flex-column align-items-center">
+            <div class=" d-flex flex-column align-items-md-start align-items-lg-start align-items-center align-items-sm-center">
+                <h1 class="details-heading">
+                  AI and Machine Learning Products
+                </h1>
+                <p class="details-para my-lg-3 my-md-3">
+                  We’ve created some of the leading AI products on the market today. We help plan, architect and create practical and scalable AI. 
+                  <br><br> We help bring your product vision to life.
+                </p>
+                <a href="#" class="learn-more-btn">Learn More</a>
+              </div>
+              </div>
+    
+              
+            
+          
+          <div class="col banner-img-main order-sm-1 order-1 order-md-2 order-lg-2">
+              <div class="d-flex flex-column align-items-center ">
+                <img class="details-img details-img1" src="./images/human1.png" alt="">
+              </div>
+          </div>
+          <img class="white-circle-1 position-absolute d-none d-sm-none d-md-inline d-lg-inline" src="./images//whiteCircle1.png" alt="">
+        </div>
+
+        <div class="row details-2-margin">
+
+          <div class="col banner-img-main order-sm-1 order-1">
+            <div class="d-flex flex-column align-items-center">
+              <img class="details-img details-img2" src="./images/human2.png" alt="">
+            </div>
+        </div>
+          <div class="banner-text order-2 col">
+            <div class="d-flex flex-column align-items-center">
+
+              <div class="d-flex flex-column align-items-md-start align-items-lg-start align-items-center align-items-sm-center">
+                <h1 class="details-heading">
+                  Data Science & Analytics
+                </h1>
+                <p class="details-para1 my-lg-3 my-md-3">
+                  We’ve helped innovative organizations of all sizes — from startups to Fortune 500s — build analytics solutions.
+                  <br>
+                  <br>
+                  We help our customers acquire, clean, organize, connect and leverage data so that they can make informed business decisions.
+
+                  <br>
+                  <br>
+                  We help give your data a voice.
+                  <br> We help bring your product vision to life.
+                </p>
+                <br>
+                <a href="#" class="learn-more-btn">Learn More</a>
+              </div>
+            </div>
+    
+              
+            </div>
+          
+          
+        </div>
+
+        <div class="row">
+          <div class="banner-text col order-2 order-sm-2 order-md-1 order-lg-1 col">
+            <div class="d-flex flex-column align-items-center">
+
+              <div class="d-flex flex-column align-items-md-start align-items-lg-start align-items-center align-items-sm-center">
+                  <h1 class="details-heading">
+                    Data Engineering and Architecture
+                  </h1>
+                  <p class="details-para2 my-lg-3 my-md-3">
+                    We can help you scale your data infrastructure to handle more complex processes or high volume transactions.
+                    <br><br>
+                    We provide guidance and implementation for complex data and infrastructure. At the same time, we help you optimize for the cost of maintaining high performance systems.
+                    <br> We help bring your product vision to life.
+                  </p>
+                  <br>
+                  <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+    
+              
+            </div>
+          
+          <div class="col banner-img-main order-sm-1 order-1 order-md-2 order-lg-2">
+              <div class="d-flex flex-column align-items-center">
+                <img class="details-img details-img3" src="./images/human3.png" alt="">
+              </div>
+          </div>
+          <img class="white-circle-2 position-absolute d-none d-sm-none d-md-inline d-lg-inline" src="./images//whitecircle2.png" alt="">
+        </div>
+
+        
+        
+
+
+        
+
+        
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/8453ae9765.js"
+      crossorigin="anonymous"
+    ></script>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      /* const toggleButton = document.getElementById("toggle-icon-custom");
+      const closeButton = document.getElementById("closeButton")
+      console.log(closeButton);
+
+        const sideBar = document.getElementById("sidebar");
+        
+        toggleButton.addEventListener("click", () => {
+          sideBar.classList.add("open");
+        })
+        closeButton.addEventListener("click", () => {
+          sideBar.classList.remove("open");
+        }) */
+
+        function openNav() {
+      document.getElementById("sidebar").style.display = "block";
+      document.getElementById("closeButton").style.display = "block";
+      document.getElementById("toggleButton").style.display = "none";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.display = "none";
+      document.getElementById("closeButton").style.display = "none";
+      document.getElementById("toggleButton").style.display = "block";
+    }
+    </script>
+  </body>
+</html>
